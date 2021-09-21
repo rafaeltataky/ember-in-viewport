@@ -1,0 +1,25 @@
+<div>
+  <MyComponent
+    class="top start-enabled"
+    @viewportSpyOverride={{true}}
+  >
+    <p>Starts enabled</p>
+  </MyComponent>
+
+  <MyComponent
+    class="top start-disabled"
+    @viewportEnabledOverride={{false}}
+  >
+    <p>Starts disabled</p>
+  </MyComponent>
+</div>
+
+<div class="hide-me">
+  <MyComponent
+    class="bottom"
+    @viewportSpyOverride={{true}}
+    @viewportIntersectionObserverOverride={{false}}
+  >
+    <p>Hi!</p>
+  </MyComponent>
+</div>
